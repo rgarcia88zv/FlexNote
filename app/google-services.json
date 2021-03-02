@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456126344452",
+    "project_id": "flexnote-35f11",
+    "storage_bucket": "flexnote-35f11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456126344452:android:c17d7d8dbf19207aa83451",
+        "android_client_info": {
+          "package_name": "com.example.flexnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456126344452-1o7sbtt69fpk5hq39c427si332j700b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdx9MuxVOeMRybW1C_Ch4F5MThHbPZvY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456126344452-1o7sbtt69fpk5hq39c427si332j700b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

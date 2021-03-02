@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.flexnote.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.flexnote.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_tareasFragment"
+            app:destination="@id/tareasFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_profesoresFragment"
+            app:destination="@id/profesoresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profesoresFragment"
+        android:name="com.example.flexnote.fragments.ProfesoresFragment"
+        android:label="fragment_profesores"
+        tools:layout="@layout/fragment_profesores" >
+        <action
+            android:id="@+id/action_profesoresFragment_to_addProfFragment"
+            app:destination="@id/addProfFragment" />
+        <action
+            android:id="@+id/action_profesoresFragment_to_editProfFragment"
+            app:destination="@id/editProfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tareasFragment"
+        android:name="com.example.flexnote.fragments.TareasFragment"
+        android:label="fragment_tareas"
+        tools:layout="@layout/fragment_tareas" >
+        <action
+            android:id="@+id/action_tareasFragment_to_addTareaFragment"
+            app:destination="@id/addTareaFragment" />
+        <action
+            android:id="@+id/action_tareasFragment_to_editTareaFragment"
+            app:destination="@id/editTareaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProfFragment"
+        android:name="com.example.flexnote.fragments.AddProfFragment"
+        android:label="fragment_add_prof"
+        tools:layout="@layout/fragment_add_prof" />
+    <fragment
+        android:id="@+id/addTareaFragment"
+        android:name="com.example.flexnote.fragments.AddTareaFragment"
+        android:label="fragment_add_tarea"
+        tools:layout="@layout/fragment_add_tarea" />
+    <fragment
+        android:id="@+id/editProfFragment"
+        android:name="com.example.flexnote.fragments.EditProfFragment"
+        android:label="fragment_edit_prof"
+        tools:layout="@layout/fragment_edit_prof" />
+    <fragment
+        android:id="@+id/editTareaFragment"
+        android:name="com.example.flexnote.fragments.EditTareaFragment"
+        android:label="fragment_edit_tarea"
+        tools:layout="@layout/fragment_edit_tarea" />
+</navigation>
