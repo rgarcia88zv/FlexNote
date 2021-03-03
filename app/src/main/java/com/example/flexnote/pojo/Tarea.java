@@ -7,6 +7,7 @@ public class Tarea {
 
 
     public Tarea(int numTarea,String titulo, String asignatura, String profesor, String descripcion) {
+        this.numTarea = numTarea;
         this.titulo = titulo;
         this.asignatura = asignatura;
         this.profesor = profesor;
